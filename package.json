@@ -6,8 +6,8 @@
     "ng": "ng",
     "start": "ng serve --host=0.0.0.0 --port 8080 --disable-host-check",
     "deploy": "ng build --prod --aot && aws s3 cp ./dist $AWS_WEBSERVER_BUCKET --recursive --acl public-read",
-    "build": "ng build --prod",
-    "test": "ng test",
+    "build": "ng build --prod --aot",
+    "test": "karma start --no-browsers",
     "lint": "ng lint",
     "e2e": "ng e2e"
   },
