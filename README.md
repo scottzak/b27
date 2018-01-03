@@ -7,7 +7,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Development server
 
-Run `ng serve` for a dev server. The development server is built to listen on all ports (0.0.0.0) on port 8080, as is required by the AWS Cloud 9 development environment. The app will automatically reload if you change any of the source files.
+Run `npm start` for a dev server. The development server is built to listen on all ports (0.0.0.0) on port 8080, as is required by the AWS Cloud 9 development environment. You can then use the default settings and browse through Cloud9 by using `Preview > Preview Running Application` from the main menu. The app will automatically reload if you change any of the source files.
 
 ## Code scaffolding
 
@@ -21,11 +21,11 @@ There is a 'deploy' script in package.json to build and deploy the package to th
 
 ## Running unit tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+Angular uses 'karma' and 'jasmine' to run automated testing.  If all of the supporting packages are installed correctly, this is how to run tests on your development server.
+- Make sure no other server is running.
+- Open a new terminal and run `npm test`
+- Open your Cloud9 browser (`Preview > Preview Running Application`).
+- Your test results should appear at the top of the browser window and be logged in terminal
 
 ## Further help
 
