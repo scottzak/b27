@@ -4,11 +4,13 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 
 import { AppComponent } from './app.component';
+import { ContentContainerComponent } from './content-container/content-container.component';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ContentContainerComponent
   ],
   imports: [
     BrowserModule,
