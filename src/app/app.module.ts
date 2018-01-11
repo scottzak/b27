@@ -2,19 +2,32 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
+import { DragScrollModule } from '../../node_modules/ngx-drag-scroll';
 
 import { AppComponent } from './app.component';
-import { ContentContainerComponent } from './content-container/content-container.component';
-
+import { NavComponent } from './nav/nav.component';
+import { FaceComponent } from './face/face.component';
+import { TitleComponent } from './title/title.component';
+import { MainContentComponent } from './main-content/main-content.component';
+import { TilesComponent } from './tiles/tiles.component';
+import { TileComponent } from './tile/tile.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ContentContainerComponent
+    TilesComponent,
+    NavComponent,
+    FaceComponent,
+    TitleComponent,
+    MainContentComponent,
+    FooterComponent,
+    TileComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    DragScrollModule
   ],
   providers: [],
   bootstrap: [AppComponent]

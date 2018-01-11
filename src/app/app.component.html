@@ -1,18 +1,16 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<div class="row" style="margin-left:20px; margin-right: 20px;">
-  <div class="col-12 col-sm-4 left-col">
-    <div class=brand-constant>
-      <h1 class="hi-my-name-is">{{ title }}</h1>
-      <img src="assets/me2.jpg" width="40%">
-      <p>{{ tagline }}</p>
-    </div>
-  </div>
-  <div class="col-12 col-sm-8 right-col">
-    <div class="main-content">
-      More stuff
-    </div>
-  </div>
+<div class="container">
+  <app-nav class="nav"></app-nav>
+  <app-face
+    class="face"
+    *ngIf="wideScreen"
+  ></app-face>
+  <app-title class="title"></app-title>
+  <app-main-content class="main-content"></app-main-content>
+  <app-tiles class="tiles"></app-tiles>
+  <app-face
+    class="face"
+    *ngIf="narrowScreen"
+  ></app-face>
+  <app-footer class="footer"></app-footer>
 </div>
-<div>
-</div>
-<router-outlet></router-outlet>
