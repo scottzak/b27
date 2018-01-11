@@ -27,10 +27,24 @@ module.exports = function (config) {
     colors: true,
     logLevel: config.LOG_INFO,
     autoWatch: true,
-    browsers: ['PhantomJS'],
+    browsers: ['ChromeHeadless'],
     // The hostname may be dynamically generated.  If you cannect connect through Preview, check that the hostnames match.
     hostname: 'b2c17b8c17b84d089f0b251713739b97.vfs.cloud9.us-east-1.amazonaws.com',
     runnerPort: 0,
-    singleRun: false
+    singleRun: false,
+    customLaunchers: {
+      ChromeHeadless: {
+        base: 'Chrome',
+        flags: [
+          '--headless',
+          '--disable-gpu',
+          // Without a remote debugging port, Google Chrome exits immediately.
+          '--remote-debugging-port=9222',
+        ]
+      }
+    }
   });
 };
+
+
+

@@ -8,6 +8,7 @@ import { Component, OnInit, Input } from '@angular/core';
 export class TileComponent implements OnInit {
   
   @Input() tnum: number;
+  @Input() imagePath: string;
 
   constructor() {
 

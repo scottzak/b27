@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { DragScrollModule } from '../../../node_modules/ngx-drag-scroll';
+import { TileComponent } from '../tile/tile.component';
 
 
 @Component({
@@ -11,7 +12,12 @@ import { DragScrollModule } from '../../../node_modules/ngx-drag-scroll';
 export class TilesComponent implements OnInit {
 
   tiles = [ 
-    1, 2, 3, 4, 5, 6
+    '1.png',
+    '2.png',
+    '3.png',
+    '4.png',
+    '5.png',
+    '6.png'
   ];
   
   getColor(i) {
