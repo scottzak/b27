@@ -40,4 +40,4 @@ testem.log
 # System Files
 .DS_Store
 Thumbs.db
-linux_signing_key.pub
+linux_signing_key.pub*
