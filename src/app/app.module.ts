@@ -16,7 +16,8 @@ import { FooterComponent } from './footer/footer.component';
 
 
 const appRoutes: Routes = [
-  { path: 'content/:page', component: MainContentComponent }
+  { path: 'content/:page', component: MainContentComponent  },
+  { path: '', redirectTo: 'content/home', pathMatch: 'full' }
 ];
 
 @NgModule({

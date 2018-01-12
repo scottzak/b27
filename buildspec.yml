@@ -1,0 +1,32 @@
+version: 0.2
+
+env:
+  variables:
+     AWS_WEBSERVER_BUCKET: "s3://csuso-zaks-b27"
+  #parameter-store:
+     # key: "value"
+     # key: "value"
+
+phases:
+  install:
+    commands:
+      - 
+  #pre_build:
+    #commands:
+      # - command
+      # - command
+  build:
+    commands:
+      # - command
+      # - command
+  #post_build:
+    #commands:
+      # - command
+      # - command
+#artifacts:
+  #files:
+    # - location
+    # - location
+  #discard-paths: yes
+  #base-directory: location
+

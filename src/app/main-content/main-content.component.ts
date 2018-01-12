@@ -20,6 +20,10 @@ export class MainContentComponent implements OnInit, OnInit {
   
   content = {
     // hash key is path
+    'home' : {
+      title: 'Home Page',
+      content: "Home Page Content"
+    },
     '1': {
       title: 'Title One',
       content: 'Content One'
@@ -56,7 +60,7 @@ export class MainContentComponent implements OnInit, OnInit {
     this.myContent = this.content[this.pathArg];
     this.paramsSubscription = this.route.params
       .subscribe(
-        (params: Params) => this.myContent = this.content[params['page']]
+        (params) => this.myContent = this.content[params['page']]
       );
   }
 
