@@ -1,0 +1,10 @@
+:host(.main-content) {
+    grid-column: 5 / -1;
+    background-color: lightblue;
+}
+
+@media (max-width: 500px) {
+    :host(.main-content) {
+        grid-column: 1 / -1;
+    }
+}

@@ -13,15 +13,10 @@ import { MainContentComponent } from './main-content/main-content.component';
 import { TilesComponent } from './tiles/tiles.component';
 import { TileComponent } from './tile/tile.component';
 import { FooterComponent } from './footer/footer.component';
-import { PageOneComponent } from './page-one/page-one.component';
-import { PageTwoComponent } from './page-two/page-two.component';
-import { PageThreeComponent } from './page-three/page-three.component';
 
 
 const appRoutes: Routes = [
-  { path: '1', component: PageOneComponent },
-  { path: '2', component: PageTwoComponent },
-  { path: '3', component: PageThreeComponent }
+  { path: 'content/:page', component: MainContentComponent }
 ];
 
 @NgModule({
@@ -34,9 +29,6 @@ const appRoutes: Routes = [
     MainContentComponent,
     FooterComponent,
     TileComponent,
-    PageOneComponent,
-    PageTwoComponent,
-    PageThreeComponent
   ],
   imports: [
     BrowserModule,
