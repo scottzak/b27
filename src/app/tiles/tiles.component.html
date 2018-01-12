@@ -1,0 +1,12 @@
+<div
+  dragScroll
+  scrollbar-hidden="true"
+  drag-scroll-y-disabled="true"
+  class="subcontainer">
+    <app-tile class="tile-container"
+      *ngFor="let tile of tiles; let i = index"
+      [tnum]="i + 1"
+      [imagePath]="tile"
+      [ngStyle]="{'background-color': getColor(i)}"
+    ></app-tile>
+</div>
