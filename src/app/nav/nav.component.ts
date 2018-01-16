@@ -11,5 +11,8 @@ export class NavComponent implements OnInit {
 
   ngOnInit() {
   }
-
+  
+  onClick(event) {
+    
+  }
 }

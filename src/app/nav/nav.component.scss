@@ -1,10 +1,91 @@
 .nav {
     display: flex;
+    flex-direction: row;
+    color: white;
+    
+    .image-container {
+       flex: 1; 
+       img {
+           display: block;
+           height: 50px;
+           margin: auto;
+       }
+       
+    }
+    
+    .menu-container {
+        flex: 5;
+        display: none;
+        ul {
+            list-style-type: none;
+                margin: 0;
+                padding: 0;
+                overflow: visible;
+                background-color: #333333;
+            }
+
+            li {
+                float: left;
+            }
+
+            li a {
+                display: block;
+                color: white;
+                // text-align: center;
+                padding: 16px;
+                text-decoration: none;
+            }
+
+            li a:hover {
+                background-color: #111111;
+            }
+        
+       }
+
+
 }
 
-img {
-    height: 50px;
-    margin-left: auto;
-    margin-right: auto;
-    
+@-webkit-keyframes oscillation
+{
+	from
+	{
+		-webkit-transform:rotate(-15deg);
+	}
+	to{
+		-webkit-transform:rotate(60deg);
+	}
+}
+ 
+@-moz-keyframes oscillation
+{
+	from{
+		-moz-transform:rotate(-15deg);
+	}
+	to{
+		-moz-transform:rotate(60deg);
+	}
+}
+
+@keyframes NAME-YOUR-ANIMATION {
+	from{
+		-moz-transform:rotate(-15deg);
+	}
+	to{
+		-moz-transform:rotate(60deg);
+	}
+}
+
+.oscillate{  
+	// -webkit-transform-origin:50% -40px;  
+	// -moz-transform-origin:50% -40px;   
+	-webkit-animation: oscillation 20s ease-in-out infinite alternate;
+	-moz-animation: oscillation 20s ease-in-out infinite alternate;
+}
+
+@media only screen and (max-width: 500px) {
+    .nav img :hover {
+        .nav-menu {
+            display: block;
+        }
+    }
 }
